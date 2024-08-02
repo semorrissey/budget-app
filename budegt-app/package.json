@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --prod",
+    "start-budget": "ng serve --open"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,8 @@
     "ag-grid-community": "^32.0.2",
     "ag-grid-enterprise": "^32.0.2",
     "budegt-app": "file:",
+    "express": "^4.19.2",
+    "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -40,5 +44,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.1.3"
+  },
+  "engines": {
+    "node": "x.x.x",
+    "npm": "x.x.x"
   }
 }
