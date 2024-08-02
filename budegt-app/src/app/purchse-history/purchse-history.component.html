@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="purchase-history">
+    <h2>Purchase History</h2>
+    <div class="grid-here">
+
+      <ag-grid-angular
+        style="width: 500px; height: 100%;"
+        class="ag-theme-alpine"
+        [gridOptions]="gridOptions">
+      </ag-grid-angular>
+    </div>
+    <div class="history">
+      <input type="text" id="new-purchase-input-name" [(ngModel)]="name" placeholder="Enter new purchase name">
+      <input type="text" id="new-purchase-input-price" [(ngModel)]="price" placeholder="Enter new purchase price">
+      <button (click)="addPurchase()">Add Purchase</button>
+    </div>
+
+  </div>

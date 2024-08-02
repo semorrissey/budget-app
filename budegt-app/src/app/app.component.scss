@@ -1,0 +1,29 @@
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.purchase-history {
+  width: 50%;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+.all-time-history {
+  width: 50%;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+.reset-button {
+  margin-top: 20px;
+}
